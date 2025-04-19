@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Blog</h1>
+
+<table class="table table-bordered border-secondary">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Nr.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Datum</th>
+            <th scope="col">Nachricht</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% guestbook.forEach(entry => { %>
+        <tr>
+            <th scope="row"><%= entry.number %></th>
+            <td><%= entry.name %></td>
+            <td><%= new Date(entry.time).toLocaleString() %></td>
+            <td class="entry-text"><%= entry.text %></td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
+    
+
+<a class="btn btn-secondary" href="/contact"></i>Contact</a>
+
+
+<%- include("partials/footer.ejs") %>
