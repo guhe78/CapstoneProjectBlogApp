@@ -1,0 +1,28 @@
+# Kompilierte Dateien
+*.class
+*.pyc
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+
+# Umgebungsvariablen
+.env
+
+# IDE-spezifische Dateien
+.vscode/
+.idea/
+
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Log-Dateien
+*.log
+
+# Temporäre Dateien
+*.tmp
+
+
